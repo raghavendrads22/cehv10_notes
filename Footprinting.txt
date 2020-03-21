@@ -1,0 +1,155 @@
+Fotprinting :
+
+Types:
+1>Passive 
+2>Active
+
+Types of Information we can collect:
+1>Network information(whois,domain,dns)
+2>System information(os,location)
+3>Organization information(emoloyee details,organisation details)
+
+
+Objective:
+1>Reduce the focus area 
+2>Know the current security mechanisms
+3>Mapping out the network.
+
+Major Fotprinting threats:
+1>Social Engineering.
+2>System and Network Attacks.
+3>Loss of privacy and Information.
+
+
+Footprinting Methodlogy:
+1>Footprinting using search engines
+2>Footprinting using whois
+3>Email Footprinting
+4>Network Footprinting
+
+
+
+Footprinting using search engines:
+->It is done by passing advanced search queries to the search engines to filter out the requiered information
+  about the target. A search engine returns SERP's(Search engine Result Pages).
+
+Google Advance Search queries:
+
+site: it restricts search result to a specific website {ex:game site:microsoft.com}//here this search query will return all the results having game in them form microsofts website.
+
+allinurl:return results having all the specified keyword in a url{ex: game microsoft}//here this will return only those url that have both the keywords game and microsoft.
+
+inurl:returns pages with keyword in a specific website {ex:inurl:games site:microsoft.com}//here this will return only those pages of microsoft that have games in there url.
+
+allintitle:returns result that have specified keyword in their title{ex:allintitle:games microsoft}
+
+intitle: it returns pages with a specifed keyword in title and rest in page{ex: game microsoft intitle:help}//this will return results which have help in title and game and microsoft anyhwhere in the page.
+
+inanchor:
+
+
+allinanchor:
+
+
+cahce:it will return googles chaced version of a page{ex:chahe:lpu.in}
+
+link:find the pages that point to a certain link{ex:link:microsoft.com}//here it will return all the pages pointing to microsoft.com
+
+related:similar to the given url it will return similar websites{ex:related:lpu.in}
+
+info:finds information about the given website{ex:info:lpu.in}
+
+location:finds info about a specific location{ex:location:India gate}
+
+filextions:return results with specific extension{ex: nasa:jpg}
+
+
+Footprinting through web services:
+Use of online services to do footprinting like using whois and netxraft.
+
+netcraft can be used to determine os used byb organisation
+
+Sublist3r:
+it is a tool used to list all the sub domain of a website
+
+*Using maps to get details regarding locaiton
+
+People search(using people search websites and social networks):
+
+people search websites:- pipl.com,intelius.com,spokeo.com etc  #These are basically public record websites
+
+
+Inspy is  tool used for linkedin enumeration
+
+
+(Using job posting site for gathering info allows us to know what kind of technology is used by our target based on their posting)
+
+VoIp and VPN Footprinting  using Shodan:
+shodan is a search engine which is used to search devices with vulnerabilities .
+
+
+Website Footprinting:
+monitoring targets website tools that we can use is burpsuite,firebug,zapproxy,website informer
+>we can examine websites souce code and cookies to get some information.
+>we can also use webspiders which perform an automated search on a website and extract the specified information. tools:-web data extractor,spiderfoot.net,visual-seo.com etc.
+>if a website has robots.txt then webspider fails
+
+
+
+Extracting metadata of public documents:
+>extracting information form pdf and word files using tools like metagoofil,extractmetadata.com,exadium.com etc.
+
+
+
+Extracting info using website monitors:
+
+websiter monitors are tools which track each and every change done in the website which can give some infoa bout target some tools are:visualping.io
+
+
+Email Footprinting:
+
+Email footprinting allows us to get targets system ip his geolocation and wheather he read the mail or not and if he cliked on the links in the mail and also the device he is using.
+ 
+>We can also use the email header to gather information like name,ip,mailserver,and authentication type.
+>some of the email tracking tools are:zendio.com,politemaik.com,emailtrackerpro etc.
+
+
+Competitive Intelligence Gathering:
+>gathering of information about our competitor and verifying it .
+
+Some other footprinting:
+
+1>Whois
+2>IP2LOCATION
+
+
+
+DNS FOOTPRINTING:
+TOOLS>dnsstuff.com,mydnstools.info,dnswatch.info.
+
+Diffrent type of record in DNS:
+
+A> points to hosts ip address
+MX>domain mail server
+NS>hosts name server
+CNAME>Canonical name is a record which is used to point multiple domain to same ip to remove problem of multiple recods for example www.example.com and example.com and to both different things so we need both to point to smae ip.
+SOA>Indicate authority of domain
+PTR>Maps IP address to host name.
+RP>Responisble person
+HINFO>Host info includes os and cpu info
+TXT>unstructured text records.
+
+
+Locate Network Range:****
+finding range of ips used can help us to gather a lot of info and also help in maping the targets network
+
+Traceroute:
+it works on the concept of ICMP Protocol and use TLL(time to live) field in the header of ICMP packets to discover router on the path to target host.It can also tell geogrphical detailstll indicates how many routers a packet may travel through.
+
+
+Footprinting through social engineering:
+
+
+Major footprinting tools: Maltego and Recon-ng
+                          FOCA and Recon dog
+                          and OSRF Framework

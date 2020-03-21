@@ -1,0 +1,48 @@
+Scanning: it is not intrustion but an extension of reconnaissance here the attacker searches for an entry point in the network and also tries to learn about network like what kind of services are running and os and firewalls etc.
+
+Types of scanning:
+1>Port scanning:it is scan done to know the list of all the open ports in the network and checking what kind of services are running on them.
+
+2>Network scanning:list ip's and hosts in a network and assesing their security.
+
+3>Vulnerability scanning: it scans for known vulnerabilites a vulnerability scanner contains scanner and a catalog of known vulnerabilities which is one by one cheked by the scanner
+
+
+TCP communication flags:
+
+URG>data contained in the packets should be processed instantly.
+FIN>the end of the communication.
+RST>reset a connection
+PSH>sends all the buffered data immediately
+ACK>acknowledges the reciept of a packet.
+SYN>initiates the connection between hosts(i initiates the 3 way handshake)
+
+>size of a flag is 1 bit
+
+
+
+3 WAY HANSHAKE :
+
+YOUTUBE:https://www.youtube.com/watch?v=LyDqA-dAPW4
+
+
+ARP Basics:
+ARP stands for Address Resolution Protocol. When you try to ping an IP address on your local network, say 192.168.1.1, your system has to turn the IP address 192.168.1.1 into a MAC address. This involves using ARP to resolve the address, hence its name.
+Systems keep an ARP look-up table where they store information about what IP addresses are associated with what MAC addresses. When trying to send a packet to an IP address, the system will first consult this table to see if it already knows the MAC address. If there is a value cached, ARP is not used.
+If the IP address is not found in the ARP table, the system will then send a broadcast packet to the network using the ARP protocol to ask "who has 192.168.1.1". Because it is a broadcast packet, it is sent to a special MAC address that causes all machines on the network to receive it. Any machine with the requested IP address will reply with an ARP packet that says "I am 192.168.1.1", and this includes the MAC address which can receive packets for that IP.
+
+ICMP Basics:
+The Internet Control Message Protocol is used by routers, devices or hosts to communicate error information to other routers, devices, or hosts. An ICMP message contains TYPE, CODE and CHECKSUM fields. These fields identify the ICMP message, provide additional information about Type and provide a method for determining the integrity of the message.
+
+
+Creating custom pacakets using tcp flags:
+>A custom flag can be created to bypass firewall or ids
+>tools:colasoft pacaket builder,ostinato,wiredit,wan killer etc.
+
+
+Scanning IPv6 Networks:
+ipv6 increases address spaces from 32 bits to 128 bits which makes scanning it more complex.
+
+
+Scanning tools :
+NMAP:
